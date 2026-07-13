@@ -24,4 +24,5 @@ vim.lsp.enable({
     "lua_ls",
     "marksman",
     "pylsp",
+    "clangd",
 })
