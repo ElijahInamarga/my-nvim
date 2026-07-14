@@ -8,6 +8,7 @@ vim.pack.add({
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/tpope/vim-fugitive",
     "https://github.com/m4xshen/autoclose.nvim",
+    "https://github.com/numToStr/Comment.nvim",
 })
 
 local MiniFiles = require("mini.files")
@@ -92,3 +93,6 @@ vim.keymap.set("n", "<leader>gd", "<cmd>Gvdiffsplit<CR>", { desc = "Git diff spl
 
 local Autoclose = require("autoclose")
 Autoclose.setup()
+
+local Comment = require("Comment")
+Comment.setup()
