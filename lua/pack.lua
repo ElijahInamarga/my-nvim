@@ -1,3 +1,4 @@
+-- Add plugins below
 vim.pack.add({
     "https://github.com/bluz71/vim-moonfly-colors",
     "https://github.com/nvim-mini/mini.nvim",
@@ -6,6 +7,7 @@ vim.pack.add({
     "https://github.com/neovim/nvim-lspconfig",
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/tpope/vim-fugitive",
+    "https://github.com/m4xshen/autoclose.nvim",
 })
 
 local MiniFiles = require("mini.files")
@@ -87,3 +89,6 @@ MiniDiff.setup({
 
 vim.keymap.set("n", "<leader>gg", "<cmd>tabnew | Git | only<cr>", { desc = "Fugitive Full Page New Tab" })
 vim.keymap.set("n", "<leader>gd", "<cmd>Gvdiffsplit<CR>", { desc = "Git diff split", })
+
+local Autoclose = require("autoclose")
+Autoclose.setup()
